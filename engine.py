@@ -17,9 +17,9 @@ velocities = ti.Vector.field(3, dtype=float, shape=n)
 forces = ti.Vector.field(3, dtype=float, shape=n)
 
 # Intial Conditions
-positions[0] = ti.Vector([0, -1.0, 0.0])
+positions[0] = ti.Vector([0, -3.0, 0.0])
 positions[1] = ti.Vector([1.0, 0.0, 0.0])
-positions[2] = ti.Vector([0.0, 1.0, 0.0])
+positions[2] = ti.Vector([-1.0, 0.0, 0.0])
 
 velocities[0] = ti.Vector([0.0, 0.0, 0.0])
 velocities[1] = ti.Vector([0.0, 0.0, 0.0])

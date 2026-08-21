@@ -71,7 +71,7 @@ def render_sphere(radius: float, sphere_pos : ti.types.vector(3, float), color :
 gui = ti.GUI("2D Sphere Shader", res=(res, res))
 while gui.running:
     center = res // 2
-    dt = 0.002
+    dt = 0.0008
 
     engine.calculate_forces()
     engine.calculate_accel()
